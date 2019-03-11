@@ -1,0 +1,18 @@
+.background{
+	display: flex;
+	flex-direction: column;
+	background-image: url("doge.jpeg");
+	height: 300px;
+	width: 300px;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0px;
+}
+
+.center{
+	height: 200px;
+}
+h3{
+	text-align: center;
+	color: white;
+}
