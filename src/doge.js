@@ -13,21 +13,23 @@ class DogeMeme extends React.Component {
 		}
 	 this.handleChange1 = this.handleChange1.bind(this);
 	 this.handleChange2 = this.handleChange2.bind(this);
+	 this.reset=this.reset.bind(this);
 	}
 	handleChange1(event){
-	this.setState({top:event.target.value})
+		this.setState({top:event.target.value})
 	}
-
 	handleChange2(event){
-	
-	this.setState({bot:event.target.value})
+		this.setState({bot:event.target.value})
 	}
-
+	reset(event){
+		this.setState({top:'Back at it again',bot:'Retry'})
+	}
 	render(){return(
 		<div classname='DogeMeme'>
 		<form>
 		<input type="text" name="top" value={this.state.top} onChange={this.handleChange1}/>
 		<input type="text" name="bot" value={this.state.bot} onChange={this.handleChange2}/>
+		<button type="button" name="reset" onClick={this.reset}>Reset </button>
 		</form>
 		<div class="background">
 		<div>
